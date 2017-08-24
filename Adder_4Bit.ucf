@@ -1,0 +1,32 @@
+# User Constraint File for Adder implementation on Mimas V2
+
+# Onboard LEDs
+NET "S[0]" LOC = T18;
+NET "S[1]" LOC = T17;
+NET "S[2]" LOC = U18;
+NET "S[3]" LOC = U17;
+NET "Cout[3]" LOC = N16;
+
+
+# Push Button Switches.
+# Internal pull-ups need to be enabled since
+# there is no pull-up resistor available on board
+NET "A[0]" PULLUP;
+NET "A[1]" PULLUP;
+NET "A[2]" PULLUP;
+NET "A[3]" PULLUP;
+NET "B[0]" PULLUP;
+NET "B[1]" PULLUP;
+NET "B[2]" PULLUP;
+NET "B[3]" PULLUP;
+NET "Cin" PULLUP;
+
+NET "A[0]" LOC = E18;
+NET "A[1]" LOC = E16;// On the Dip switch A is going to be switches 1-4, 4 being A[0]
+ NET "A[2]" LOC = F18;
+ NET "A[3]" LOC = F17;
+NET "B[0]" LOC = C17;// B is 5-8, 8 being B[0]
+NET "B[1]" LOC = C18;
+NET "B[2]" LOC = D17;
+NET "B[3]" LOC = D18;
+NET "Cin" LOC = M16; //Cin located on push button SW3 
